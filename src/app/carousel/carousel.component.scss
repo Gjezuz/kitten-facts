@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+.button {
+  margin: 0 5rem;
+
+  button {
+    scale: 2;
+  }
+}
+
+.spinner {
+  width: 60rem;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

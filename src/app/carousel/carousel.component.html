@@ -1,1 +1,15 @@
-<p>carousel works!</p>
+<div class="wrapper">
+  <div class="button">
+    <button mat-icon-button color="primary" [disabled]="catFact ? catFact.id === 0 : false" (click)="loadPrevious()"><mat-icon>arrow_back</mat-icon></button>
+  </div>
+  <div class="carousel">
+    <app-carousel-item *ngIf="!loading" [catFact]="catFact"></app-carousel-item>
+    <div *ngIf="loading" class="spinner">
+      <mat-spinner></mat-spinner>
+    </div>
+  </div>
+  <div class="button">
+    <button mat-icon-button color="primary" (click)="loadNext()"><mat-icon>navigate_next</mat-icon></button>
+  </div>
+</div>
+
