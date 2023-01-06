@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat-image {
+  width: 50%;
+  height: 50%;
+}
+
+.cat-fact {
+  margin-top: 16px;
+}

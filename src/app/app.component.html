@@ -1,0 +1,11 @@
+<mat-toolbar>Cat Facts</mat-toolbar>
+<div class="container">
+  <img [src]="catImageUrl" class="cat-image" alt="Cat">
+  <button mat-icon-button (click)="loadPrevious()" [disabled]="previousDisabled">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <button mat-icon-button (click)="loadNext()" [disabled]="nextDisabled">
+    <mat-icon>navigate_next</mat-icon>
+  </button>
+  <p class="cat-fact">{{catFact}}</p>
+</div>

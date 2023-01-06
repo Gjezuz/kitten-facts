@@ -11,24 +11,26 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { CarouselItemComponent } from './carousel/carousel-item/carousel-item.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { PictureService } from './services/picture.service';
+import { FactService } from './services/fact.service';
+import { HistoryService } from './services/history.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CarouselComponent,
-    HeaderComponent,
-    CarouselItemComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     HttpClientModule,
     MatToolbarModule,
-    MatIconModule,
     MatButtonModule,
-    MatProgressSpinnerModule
+    MatIconModule
   ],
-  providers: [],
+  providers: [
+    PictureService,
+    FactService,
+    HistoryService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
