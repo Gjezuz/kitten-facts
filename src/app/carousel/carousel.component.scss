@@ -1,0 +1,19 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.carousel button {
+  width: 64px;
+  height: 64px;
+  margin: 16px;
+}
+
+.carousel app-carousel-item {
+  flex: 0 1 auto;
+  margin: 0 8px;
+  width: 50%;
+  height: 75%;
+}
